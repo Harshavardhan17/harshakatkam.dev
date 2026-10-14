@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="HK monogram">
+  <style>
+    .bg { fill: #FBF6EE; }
+    .frame { stroke: #E4DBCC; }
+    .glyph { fill: #241C15; }
+    .tick { fill: #2A4B9B; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #1A1611; }
+      .frame { stroke: #38312A; }
+      .glyph { fill: #ECE3D6; }
+      .tick { fill: #9DB2EE; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="32" height="32" rx="7"/>
+  <rect class="frame" x="1.75" y="1.75" width="28.5" height="28.5" rx="5.5" fill="none" stroke-width="1"/>
+  <text class="glyph" x="16" y="21.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="600" letter-spacing="0.3">HK</text>
+  <rect class="tick" x="10" y="24.5" width="12" height="1.6" rx="0.8"/>
+</svg>

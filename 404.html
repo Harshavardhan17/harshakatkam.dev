@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — harshakatkam.dev</title>
+  <meta name="description" content="The requested page could not be found on harshakatkam.dev.">
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+
+  <script>
+  (function () {
+    var root = document.documentElement;
+    try {
+      var stored = localStorage.getItem('theme');
+      if (stored === 'dark' || stored === 'light') {
+        root.setAttribute('data-theme', stored);
+      }
+    } catch (storageError) {}
+    root.classList.add('has-js');
+  })();
+  </script>
+
+  <style>
+    .notfound {
+      min-height: 72vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-block: var(--sp-5);
+    }
+    .notfound__code {
+      font-family: var(--mono);
+      font-size: 0.8125rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .notfound__title {
+      margin-top: var(--sp-2);
+      font-family: var(--display);
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+    .notfound__body {
+      margin-top: var(--sp-3);
+      max-width: 46ch;
+      color: var(--muted);
+    }
+    .notfound__home {
+      margin-top: var(--sp-4);
+      font-size: 1.0625rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="notfound">
+    <div class="wrap">
+      <p class="notfound__code">Error 404</p>
+      <h1 class="notfound__title">This page wandered off.</h1>
+      <p class="notfound__body">The address you asked for isn&rsquo;t part of this site. Nothing broke &mdash; the route simply doesn&rsquo;t exist.</p>
+      <p class="notfound__home"><a class="cta" href="/">Back home<span class="cta__arrow" aria-hidden="true">&rarr;</span></a></p>
+    </div>
+  </main>
+</body>
+</html>
