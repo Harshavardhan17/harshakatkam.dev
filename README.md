@@ -149,7 +149,7 @@ social profiles — update both when you have the real username:
 
    ```json
    "sameAs": [
-     "https://www.linkedin.com/in/harshavardhan-katkam-64bb58443",
+     "https://www.linkedin.com/in/harshavardhankatkam",
      "https://github.com/YOUR_USERNAME"
    ]
    ```
