@@ -45,12 +45,14 @@ works, but a local server matches production more closely (and the font loads cl
 
 ## Design & tech notes
 
-- **Palette.** Warm ivory background (`#FBF6EE`), near-black ink text (`#241C15`),
-  a muted brown for secondary text, hairline `#E4DBCC`, and a single deep ink-blue
-  accent (`#2A4B9B`) used sparingly for links and small marks. The dark theme is a
-  warm near-black. All text pairs meet WCAG AA in both themes.
+- **Palette.** Cool off-white background (`#F7F9FC`), slate ink text (`#0F172A`),
+  slate-grey secondary text (`#4B5768`), hairline `#DCE2EA`, and a single deep teal
+  accent (`#0B6B7D`) for links, pills and small marks. The dark theme is deep navy
+  (`#0B1324`) with light slate text and a bright teal accent (`#5EEAD4`). All text
+  pairs meet WCAG AA in both themes.
 - **Type.** Display face is **Fraunces** (self-hosted, see below); body is the
-  visitor's system sans-serif; a system monospace is used only for tiny meta such
+  visitor's system sans-serif, which also sets the role titles and post titles in the
+  Work and Writing timelines; a system monospace is used only for tiny meta such
   as dates. All the personality is carried by the Fraunces headings and the one
   italic flourish in the hero.
 - **Themes.** Default follows `prefers-color-scheme`. A toggle in the top bar
@@ -113,15 +115,19 @@ All copy lives in `index.html`. Each section has a stable `id` and an
   `<em>` is the italic flourish), the `.hero__intro` paragraph, and the `.hero__actions`
   links.
 - **About** — `<section id="about">`, the `.prose` paragraphs.
-- **Work** — `<section id="work">`, the `<ol class="entries">`. Each role is one
-  `<li class="entry">` (dates, role, meta line, and `.entry__notes` bullets).
+- **Work** — `<section id="work">`, the `<ol class="entries">` timeline. Each role is one
+  `<li class="entry">`: an `.entry__dates` column, then `.entry__body` with the role and
+  org, a meta line, an `.entry__desc` paragraph, and a `.tags` row of `.tag` pills.
 - **Selected work** — `<section id="selected">`, the `<ol class="selected">` of
   `.pick` items.
 - **Stack** — `<section id="stack">`, the `<dl class="stack">` groups plus the
   `.creds` block (certification + education).
+- **Writing** — `<section id="writing">`: the `.series` block for the cartographer
+  series and the `.more` block for other posts. Each post is one `<li class="post">`
+  (date, title link, one-line note). Only link posts that are live on the blog.
 - **Contact** — `<section id="contact">`, the `.contact` block.
 
-The top-bar nav links to `#about`, `#work`, and `#contact`. If you rename or add one
+The top-bar nav links to `#about`, `#work`, `#writing`, and `#contact`. If you rename or add one
 of those sections, update the matching `<a class="nav__link">` too. Any element with
 a `data-reveal` attribute fades in on scroll (when motion is allowed); add the
 attribute to opt a new block into that.

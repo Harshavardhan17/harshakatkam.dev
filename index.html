@@ -83,6 +83,7 @@
       <nav class="nav" aria-label="Primary">
         <a class="nav__link" href="#about">About</a>
         <a class="nav__link" href="#work">Work</a>
+        <a class="nav__link" href="#writing">Writing</a>
         <a class="nav__link" href="#contact">Contact</a>
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">
           <svg class="icon icon--moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4 6.2 6.2 0 0 0 20 14.5Z"></path></svg>
@@ -127,39 +128,39 @@
         <ol class="entries stagger">
           <li class="entry" data-reveal>
             <p class="entry__dates">Apr 2026 &mdash; Present</p>
-            <h3 class="entry__role">Senior Member of Technical Staff</h3>
-            <p class="entry__meta"><span class="entry__org">Bluecopa</span> &middot; Backend Engineering &middot; Hyderabad</p>
-            <ul class="entry__notes">
-              <li>Designed and built a multi-tenant, self-service data platform where enterprise customers define and evolve their own typed schemas at runtime, with automated zero-downtime migrations across isolated tenant databases.</li>
-              <li>Turn production data-integrity failures into fail-closed fixes that retire the whole failure class, backed by recovery runbooks the on-call team can follow.</li>
-              <li>Architected an enterprise email-ingestion backend and its Microsoft (Azure AD) OAuth integration, defining the security, consent, and onboarding model for customer mailbox connectivity.</li>
-            </ul>
+            <div class="entry__body">
+              <h3 class="entry__role">Senior Member of Technical Staff <span class="entry__sep" aria-hidden="true">&middot;</span> <span class="entry__org">Bluecopa</span></h3>
+              <p class="entry__meta">Backend Engineering &middot; Hyderabad</p>
+              <p class="entry__desc">Designed and built a multi-tenant, self-service data platform where enterprise customers define and evolve their own typed schemas at runtime, with automated zero-downtime migrations across isolated tenant databases. I turn production data-integrity failures into fail-closed fixes that retire the whole failure class, backed by recovery runbooks the on-call team can follow, and I architected an enterprise email-ingestion backend and its Microsoft (Azure AD) OAuth integration, defining the security, consent, and onboarding model for customer mailbox connectivity.</p>
+              <ul class="tags" aria-label="Technologies"><li class="tag">Multi-tenancy</li><li class="tag">Schema migrations</li><li class="tag">OAuth</li><li class="tag">Azure AD</li></ul>
+            </div>
           </li>
           <li class="entry" data-reveal>
             <p class="entry__dates">Sep 2024 &mdash; Mar 2026</p>
-            <h3 class="entry__role">Senior Consultant, Application Developer</h3>
-            <p class="entry__meta"><span class="entry__org">Thoughtworks</span> &middot; First Student &middot; Hyderabad</p>
-            <ul class="entry__notes">
-              <li>Led the design of a high-throughput push-notification service on AWS SNS and Spring Boot &mdash; 10K+ events a day, with batching, tuned thread pools, retry scheduling, and idempotent, fault-tolerant workflows.</li>
-              <li>Introduced Avro-based, event-driven messaging on AWS Glue Schema Registry and MSK, then drove its adoption across teams.</li>
-            </ul>
+            <div class="entry__body">
+              <h3 class="entry__role">Senior Consultant, Application Developer <span class="entry__sep" aria-hidden="true">&middot;</span> <span class="entry__org">Thoughtworks</span></h3>
+              <p class="entry__meta">First Student &middot; Hyderabad</p>
+              <p class="entry__desc">Led the design of a high-throughput push-notification service on AWS SNS and Spring Boot &mdash; 10K+ events a day, with batching, tuned thread pools, retry scheduling, and idempotent, fault-tolerant workflows. Introduced Avro-based, event-driven messaging on AWS Glue Schema Registry and MSK, then drove its adoption across teams.</p>
+              <ul class="tags" aria-label="Technologies"><li class="tag">Spring Boot</li><li class="tag">AWS SNS</li><li class="tag">AWS MSK</li><li class="tag">Avro</li><li class="tag">Glue Schema Registry</li></ul>
+            </div>
           </li>
           <li class="entry" data-reveal>
             <p class="entry__dates">Aug 2021 &mdash; Aug 2024</p>
-            <h3 class="entry__role">Consultant, Application Developer</h3>
-            <p class="entry__meta"><span class="entry__org">Thoughtworks</span> &middot; First Student, GAP Inc. &middot; Hyderabad</p>
-            <ul class="entry__notes">
-              <li>Built Spring Boot and Kafka microservices and led full-stack delivery through a React front-end, and defined an AWS disaster-recovery strategy for the platform.</li>
-              <li>Shipped REST APIs and Kafka consumers for GDPR and CCPA data-deletion flows, holding the codebase at 90% test coverage.</li>
-            </ul>
+            <div class="entry__body">
+              <h3 class="entry__role">Consultant, Application Developer <span class="entry__sep" aria-hidden="true">&middot;</span> <span class="entry__org">Thoughtworks</span></h3>
+              <p class="entry__meta">First Student, GAP Inc. &middot; Hyderabad</p>
+              <p class="entry__desc">Built Spring Boot and Kafka microservices and led full-stack delivery through a React front-end, and defined an AWS disaster-recovery strategy for the platform. Shipped REST APIs and Kafka consumers for GDPR and CCPA data-deletion flows, holding the codebase at 90% test coverage.</p>
+              <ul class="tags" aria-label="Technologies"><li class="tag">Spring Boot</li><li class="tag">Kafka</li><li class="tag">React</li><li class="tag">AWS</li><li class="tag">JUnit</li></ul>
+            </div>
           </li>
           <li class="entry" data-reveal>
             <p class="entry__dates">Apr 2021 &mdash; Aug 2021</p>
-            <h3 class="entry__role">Software Engineer Intern</h3>
-            <p class="entry__meta"><span class="entry__org">Thoughtworks</span> &middot; Hyderabad</p>
-            <ul class="entry__notes">
-              <li>Built a Java starter kit with test-driven development, structured logging, and secret management baked in from the first commit.</li>
-            </ul>
+            <div class="entry__body">
+              <h3 class="entry__role">Software Engineer Intern <span class="entry__sep" aria-hidden="true">&middot;</span> <span class="entry__org">Thoughtworks</span></h3>
+              <p class="entry__meta">Hyderabad</p>
+              <p class="entry__desc">Built a Java starter kit with test-driven development, structured logging, and secret management baked in from the first commit.</p>
+              <ul class="tags" aria-label="Technologies"><li class="tag">Java</li><li class="tag">TDD</li></ul>
+            </div>
           </li>
         </ol>
       </div>
@@ -225,6 +226,68 @@
         <div class="creds" data-reveal>
           <p class="creds__line"><span class="creds__key">Certification</span> AWS Certified Solutions Architect &ndash; Associate <span class="creds__note">2023&ndash;2026</span></p>
           <p class="creds__line"><span class="creds__key">Education</span> B.Tech, Electronics &amp; Communication Engineering, RGUKT <span class="creds__note">2017&ndash;2021 &middot; CGPA 9.43 / 10</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="writing" aria-labelledby="writing-title">
+      <div class="wrap">
+        <div class="section__head" data-reveal>
+          <h2 class="section__title" id="writing-title">Things I&rsquo;ve written</h2>
+          <p class="section__lead">I write on my blog about AI agents and the backend craft around them.</p>
+        </div>
+        <div class="series" data-reveal>
+          <p class="series__kicker">Ongoing series</p>
+          <h3 class="series__title"><a class="link" href="https://harshakatkam.dev/series/agent-series" rel="noopener">cartographer: learn AI agents by building one, in 30 days</a></h3>
+          <p class="series__note">A build-along that starts from an empty file and grows one real agent a day at a time, explaining every line on the way.</p>
+          <ol class="posts">
+            <li class="post">
+              <time class="post__date" datetime="2026-10-06">Oct 06, 2026</time>
+              <a class="post__title" href="https://harshakatkam.dev/pilot-thirty-days-one-agent" rel="noopener"><span class="post__num">Day 00</span> Learn AI agents by building one, in 30 days</a>
+              <p class="post__note">The plan for the series: an empty file, one agent, and thirty days to build it properly.</p>
+            </li>
+            <li class="post">
+              <time class="post__date" datetime="2026-10-06">Oct 06, 2026</time>
+              <a class="post__title" href="https://harshakatkam.dev/agents-from-zero" rel="noopener"><span class="post__num">Day 00a</span> Six ideas that explain every AI agent, before any code</a>
+              <p class="post__note">A no-code primer on the loop, the tools, and the words every agent explainer assumes you know.</p>
+            </li>
+            <li class="post">
+              <time class="post__date" datetime="2026-10-09">Oct 09, 2026</time>
+              <a class="post__title" href="https://harshakatkam.dev/the-40-line-agent" rel="noopener"><span class="post__num">Day 01</span> Why your first agent should be 40 lines, not a framework</a>
+              <p class="post__note">Writing the agent loop by hand first, so a framework never hides what it is doing.</p>
+            </li>
+            <li class="post">
+              <time class="post__date" datetime="2026-10-11">Oct 11, 2026</time>
+              <a class="post__title" href="https://harshakatkam.dev/llm-is-a-stateless-function" rel="noopener"><span class="post__num">Day 02</span> An LLM is a stateless function. Everything else is you</a>
+              <p class="post__note">Why the model forgets the last file, and why memory is code you write around it.</p>
+            </li>
+            <li class="post">
+              <time class="post__date" datetime="2026-10-14">Oct 14, 2026</time>
+              <a class="post__title" href="https://harshakatkam.dev/a-repo-does-not-fit-in-context" rel="noopener"><span class="post__num">Day 03</span> Your repo does not fit in the context window. Now what?</a>
+              <p class="post__note">What happens when a whole repository is pasted into one prompt, and what to do instead.</p>
+            </li>
+          </ol>
+        </div>
+        <div class="more" data-reveal>
+          <p class="series__kicker">Also on the blog</p>
+          <ol class="posts">
+            <li class="post">
+              <time class="post__date" datetime="2026-07-04">Jul 04, 2026</time>
+              <a class="post__title" href="https://harshakatkam.dev/http-just-got-a-new-method-meet-query" rel="noopener">HTTP just got a new method &mdash; meet QUERY</a>
+              <p class="post__note">A safe, idempotent method that finally lets a read request carry a body.</p>
+            </li>
+            <li class="post">
+              <time class="post__date" datetime="2026-06-04">Jun 04, 2026</time>
+              <a class="post__title" href="https://harshakatkam.dev/the-senior-developer-mindset-how-to-turn-abstract-ideas-into-production-code" rel="noopener">The senior developer mindset: turning abstract ideas into production code</a>
+              <p class="post__note">The skill that has compounded most in my career: taking a vague, half-formed idea and making it real.</p>
+            </li>
+            <li class="post">
+              <time class="post__date" datetime="2026-04-24">Apr 24, 2026</time>
+              <a class="post__title" href="https://harshakatkam.dev/resttemplate-vs-restclient-vs-webclient" rel="noopener">RestTemplate vs RestClient vs WebClient</a>
+              <p class="post__note">Sorting out Spring&rsquo;s three HTTP clients, and when to reach for each.</p>
+            </li>
+          </ol>
+          <p class="more__all"><a class="cta" href="https://harshakatkam.dev/" rel="noopener">Read everything on harshakatkam.dev<span class="cta__arrow" aria-hidden="true">&rarr;</span></a></p>
         </div>
       </div>
     </section>

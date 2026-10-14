@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="HK monogram">
   <style>
-    .bg { fill: #FBF6EE; }
-    .frame { stroke: #E4DBCC; }
-    .glyph { fill: #241C15; }
-    .tick { fill: #2A4B9B; }
+    .bg { fill: #F7F9FC; }
+    .frame { stroke: #DCE2EA; }
+    .glyph { fill: #0F172A; }
+    .tick { fill: #0B6B7D; }
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #1A1611; }
-      .frame { stroke: #38312A; }
-      .glyph { fill: #ECE3D6; }
-      .tick { fill: #9DB2EE; }
+      .bg { fill: #0B1324; }
+      .frame { stroke: #22304A; }
+      .glyph { fill: #E2E8F0; }
+      .tick { fill: #5EEAD4; }
     }
   </style>
   <rect class="bg" x="0" y="0" width="32" height="32" rx="7"/>
