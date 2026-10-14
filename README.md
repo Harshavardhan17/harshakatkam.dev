@@ -149,7 +149,7 @@ social profiles — update both when you have the real username:
 
    ```json
    "sameAs": [
-     "https://www.linkedin.com/in/harshavardhankatkam",
+     "https://www.linkedin.com/in/harshavardhan-katkam-64bb58443",
      "https://github.com/YOUR_USERNAME"
    ]
    ```
@@ -171,7 +171,7 @@ to a work email:
 cd harshakatkam.dev
 git init
 git config user.name "Harshavardhan Katkam"
-git config user.email "harshavardhan.katkam@gmail.com"
+git config user.email "<your-personal-email>"
 ```
 
 Verify before every commit, especially if you have a global work identity configured:
@@ -180,7 +180,7 @@ Verify before every commit, especially if you have a global work identity config
 git config user.email
 ```
 
-It must print `harshavardhan.katkam@gmail.com` — **not** any Bluecopa/company email.
+It must print your **personal** email — **not** any Bluecopa/company email.
 Do not use work credentials, work SSH keys, or a work `gh auth` login for this repo.
 
 ### Publish

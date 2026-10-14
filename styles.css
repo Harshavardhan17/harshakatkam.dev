@@ -22,7 +22,7 @@
   --text: #241C15;
   --muted: #6E6152;
   --line: #E4DBCC;
-  --accent: #2A4B9B;
+  --accent: #A5431B;
 
   --display: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -49,7 +49,7 @@
     --text: #ECE3D6;
     --muted: #A99C8B;
     --line: #38312A;
-    --accent: #9DB2EE;
+    --accent: #E79A72;
   }
 }
 
@@ -60,7 +60,7 @@
   --text: #ECE3D6;
   --muted: #A99C8B;
   --line: #38312A;
-  --accent: #9DB2EE;
+  --accent: #E79A72;
 }
 
 :root[data-theme="light"] {
@@ -70,7 +70,7 @@
   --text: #241C15;
   --muted: #6E6152;
   --line: #E4DBCC;
-  --accent: #2A4B9B;
+  --accent: #A5431B;
 }
 
 *,
