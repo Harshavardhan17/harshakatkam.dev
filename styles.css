@@ -23,7 +23,6 @@
   --muted: #4B5768;
   --line: #DCE2EA;
   --accent: #0B6B7D;
-  --tag-bg: #E2EEF1;
 
   --display: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -51,7 +50,6 @@
     --muted: #94A3B8;
     --line: #22304A;
     --accent: #5EEAD4;
-    --tag-bg: #12283A;
   }
 }
 
@@ -63,7 +61,6 @@
   --muted: #94A3B8;
   --line: #22304A;
   --accent: #5EEAD4;
-  --tag-bg: #12283A;
 }
 
 :root[data-theme="light"] {
@@ -74,7 +71,6 @@
   --muted: #4B5768;
   --line: #DCE2EA;
   --accent: #0B6B7D;
-  --tag-bg: #E2EEF1;
 }
 
 *,
@@ -387,10 +383,6 @@ main > section:not(.hero) {
   font-size: 1.0625rem;
 }
 
-.hero__dot {
-  color: var(--line);
-}
-
 .section__head {
   max-width: var(--measure);
   margin-bottom: var(--sp-4);
@@ -673,11 +665,14 @@ main > section:not(.hero) {
 .creds__line {
   color: var(--text);
   font-size: 1.0625rem;
+  padding-left: 8rem;
+  text-indent: -8rem;
 }
 
 .creds__key {
   display: inline-block;
   min-width: 8rem;
+  text-indent: 0;
   font-family: var(--mono);
   font-size: 0.75rem;
   letter-spacing: 0.1em;
@@ -686,6 +681,7 @@ main > section:not(.hero) {
 }
 
 .creds__note {
+  white-space: nowrap;
   font-family: var(--mono);
   font-size: 0.8125rem;
   letter-spacing: 0.02em;
@@ -703,6 +699,9 @@ main > section:not(.hero) {
 
 .contact__links {
   margin-top: var(--sp-3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1) var(--sp-4);
   font-size: 1.1875rem;
 }
 
@@ -772,6 +771,7 @@ main > section:not(.hero) {
   .brand__short { display: inline; }
   .selected { grid-template-columns: minmax(0, 1fr); }
   .stack__group { grid-template-columns: minmax(0, 1fr); gap: var(--sp-1); }
+  .creds__line { padding-left: 0; text-indent: 0; }
   .creds__key { min-width: 0; margin-right: 0.5rem; }
 }
 

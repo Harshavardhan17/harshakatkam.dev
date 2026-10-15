@@ -136,31 +136,12 @@ Theme colors, spacing scale (`--sp-1` … `--sp-5`), fonts, and layout widths ar
 custom properties on `:root` at the top of `styles.css`. Reuse the spacing scale
 rather than introducing arbitrary values.
 
-## Adding the GitHub link later
+## Social profiles
 
-GitHub is intentionally omitted for now (no invented handle). Two spots reference the
-social profiles — update both when you have the real username:
+LinkedIn and GitHub (`github.com/Harshavardhan17`) appear in two spots; keep them in sync:
 
-1. **Contact section** in `index.html` — add a link alongside the existing LinkedIn
-   one, mirroring its markup:
-
-   ```html
-   <p class="contact__links">
-     <a class="link" href="https://github.com/YOUR_USERNAME" rel="me noopener">github.com/YOUR_USERNAME</a>
-   </p>
-   ```
-
-2. **JSON-LD** `sameAs` array in the `<script type="application/ld+json">` block —
-   add the profile URL:
-
-   ```json
-   "sameAs": [
-     "https://www.linkedin.com/in/harshavardhankatkam",
-     "https://github.com/YOUR_USERNAME"
-   ]
-   ```
-
-Do not invent a handle — use your real personal GitHub username.
+1. **Contact section** in `index.html` (`.contact__links`).
+2. **JSON-LD** `sameAs` array in the `<script type="application/ld+json">` block.
 
 ## Deploy — GitHub Pages on the `about` subdomain
 
